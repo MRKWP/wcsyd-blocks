@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/block-two",
+	"version": "0.1.0",
+	"title": "Block Two",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+	  "html": false
+	},
+	"attributes": {
+		"example_number":{
+            "type": "number",
+            "default": 1
+        },
+        "example_text":{
+            "type": "string",
+            "default": "Text"
+        },
+        "example_boolean": {
+            "type": "boolean",
+            "default": false
+        },
+		"show_debug": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "block-two",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+  }
